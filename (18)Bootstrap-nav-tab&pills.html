@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap-tabs-pills</title>
+	<meta content="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h4>this is simple list item :</h4>
+		<ul>
+			<li>ubordred-list</li>
+			<li>ubordred-list</li>
+			<li>ubordred-list</li>
+			<li>ubordred-list</li>
+			<li>ubordred-list</li>
+		</ul>
+		<h4>and this is with ul.list-inline</h4>
+		<ul class="list-inline">
+			<li>inline-item</li>
+			<li>inline-item</li>
+			<li>inline-item</li>
+			<li>inline-item</li>
+			<li>inline-item</li>
+		</ul>
+		<h4>and this list is for ul.nav.nav-tabs and li.active</h4>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#">nav-item</a></li>
+			<li><a href="#">nav-item</a></li>
+			<li><a href="#">nav-item</a></li>
+			<li><a href="#">nav-item</a></li>
+			<li><a href="#">nav-item</a></li>
+		</ul>
+		<h4>this tab have dropdown ul in one of li</h4>
+		<ul class="nav nav-tabs">
+			<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">menu<span class="caret">
+				<ul class="dropdown-menu">
+					<li><a href="#">submenu</a></li>
+					<li><a href="#">submenu</a></li>
+					<li><a href="#">submenu</a></li>
+					<li class="divider"></li>
+					<li><a href="#">submenu</a></li>
+					<li><a href="#">submenu</a></li>
+				</ul>
+			</span></a></li>
+			<li class="active"><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+		</ul>
+		<h2>nav-pills:</h2>
+		<ul class="nav nav-pills">
+			<li class="active"><a href="#">pill-item</a></li>
+			<li><a href="#">pill-item</a></li>
+			<li><a href="#">pill-item</a></li>
+			<li><a href="#">pill-item</a></li>
+		</ul>
+		<h4>nav-pills vertically:</h4>
+		<ul class="nav">
+			<li><a href="#">pill-item</a></li>
+			<li class="active"><a href="#">pill-item</a></li>
+			<li><a href="#">pill-item</a></li>
+			<li><a href="#">pill-item</a></li>
+		</ul>
+		<h4>nav-stacked</h4>
+		<ul class="nav nav-pills nav-stacked">
+			<li><a href="#">item</a></li>
+			<li class="active"><a href="#">item</a></li>
+			<li><a href="#">item</a></li>
+			<li><a href="#">item</a></li>
+			<li><a href="#">item</a></li>
+		</ul>
+		<h4>nav-pills in col-md-4</h4>
+		<div class="row">
+			<div class="col-md-4">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequatur, modi, obcaecati magnam debitis optio hic et illum cumque facere qui corporis, quo eaque perspiciatis assumenda dicta cum alias fugiat.
+			</div>
+			<div class="col-md-4">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima sequi molestiae beatae dolore, eaque nostrum rerum hic neque voluptatibus maiores. Debitis, sed autem voluptatibus a dolor quo neque perspiciatis tempore!
+			</div>
+			<div class="col-md-4">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a href="#">pills-item</a></li>
+					<li><a href="#">pills-item</a></li>
+					<li><a href="#">pills-item</a></li>
+					<li><a href="#">pills-item</a></li>
+				</ul>
+			</div>
+		</div>
+		<h4>nav-pills with dropdown menu</h4>
+		<ul class="nav nav-pills">
+			<li class="active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">menu
+				<span class="caret">
+					<ul class="dropdown-menu">
+						<li><a href="#">sub-menu</a></li>
+						<li><a href="#">sub-menu</a></li>
+						<li class="divider"></li>
+						<li><a href="#">sub-menu</a></li>
+					</ul>
+			</span></a></li>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+			<li><a href="#">menu</a></li>
+		</ul>
+		<h4>tab and nav justified</h4>
+		<ul class="nav nav-tabs nav-justified">
+			<li><a href="#">tab-item</a></li>
+			<li class="active"><a href="#">tab-item</a></li>
+			<li><a href="#">tab-item</a></li>
+		</ul>
+		<div style="width:100%;height:10px;"></div>
+		<ul class="nav nav-pills nav-justified">
+			<li class="active"><a href="#">pills-item</a></li>
+			<li><a href="#">pills-item</a></li>
+			<li><a href="#">pills-item</a></li>
+			<li><a href="#">pills-item</a></li>
+		</ul>
+		<h2>TOGGELABLE NAV TABS&PILLS</h2>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#home" data-toggle="tab">home</a></li>
+			<li><a href="#tab1" data-toggle="tab">tab1</a></li>
+			<li><a href="#tab2" data-toggle="tab">tab2</a></li>
+		</ul>
+		<div class="tab-content">
+			<div id="home" class="tab-pane fade in active">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam eum veritatis, illo eius tempore. Modi nesciunt omnis adipisci mollitia ullam repellat pariatur asperiores quis, inventore quam cum itaque provident ea.</p>
+			</div>
+			<div id="tab1" class="tab-pane fade">
+				<p>Consequatur, ullam? Alias quas at amet nemo, officiis tempora officia earum cumque asperiores repudiandae ea, accusantium nulla, natus ut expedita quis cum odit quia deserunt molestias, dolor doloremque vero nostrum.</p>
+			</div>
+			<div id="tab2" class="tab-pane fade">
+				<p>Voluptatem expedita deserunt voluptas veritatis aspernatur, dignissimos ut cumque ad! Commodi quis natus pariatur deserunt, quo nulla hic illum, nobis consequatur deleniti nesciunt ad libero labore voluptas culpa voluptatem molestias?</p>
+			</div>
+		</div>
+		<h2>nav-pills togglable</h2>
+		<ul class="nav nav-pills">
+			<li class="active"><a href="#pills1" data-toggle="pill">pills1</a></li>
+			<li><a href="#pills2" data-toggle="pill">pills2</a></li>
+			<li><a href="#pills3" data-toggle="pill">pills3</a></li>
+		</ul>
+		<div class="tab-content">
+			<div id="pills1" class="tab-pane fade in active">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga expedita eos perspiciatis nulla suscipit odio amet cumque iusto, minima! Veniam eaque vero repudiandae officiis fuga. Perferendis consequuntur dolores ea non?</p>
+			</div>
+			<div id="pills2" class="tab-pane fade">
+				<p>Doloribus aspernatur sunt quidem nam eum, dolore nostrum voluptatibus velit. Culpa natus provident, dignissimos voluptas molestiae voluptatem optio dolor possimus asperiores adipisci earum magni ea minima, tempore sint et iure!</p>
+			</div>
+			<div id="pills3" class="tab-pane fade">
+				<p>Ab incidunt ipsa, harum, ratione placeat neque ducimus ex? Corporis natus earum mollitia quae doloribus esse, iure magni aliquam enim sunt cum eveniet ipsum, nisi dignissimos repudiandae, delectus vel voluptatum.</p>
+			</div>
+		</div>
+		</div><!--container-->
+	</body>
+	</html>

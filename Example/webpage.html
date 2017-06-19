@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>webpage</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="../bootstrap/js/jquery.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<style>
+		.navbar-default{
+			background-color: #D5D5D5;
+		}
+		nav.navbar{
+			margin-bottom: 0px;
+		}
+
+		#content{
+			height: auto;
+		}
+		#left-sb{
+			height: 100%;
+			padding-top: 20px;
+			background: #F5F5F5;
+		}
+		#right-sb{
+			padding-top: 20px;
+			background: #F5F5F5;
+			height: 100%;
+		}
+		#main-content{
+			height: 100%;
+		}
+		@media (max-width: 1100px) and ( min-width: 800px) {
+			.table{
+				width: 60% !important;
+			}
+		}
+		.table{
+			margin-top: 10px;
+			width: 70%;
+			float: left;
+		}
+		img{
+			float: right;
+		}
+		div.ads{
+			border: 3px solid #9f9f9f;
+			padding: 30px;
+			margin-bottom: 15px;
+		}
+		#footer{
+			height: 40px;
+			line-height: 40px;
+			background: #9f9f9f;
+		}
+		@media screen and (min-width: 994px){
+			#left-sb,#main-content,#right-sb{
+				height: 800px;
+				overflow: scroll;
+			}
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" data-toggle="collapse" data-target="#navbar-top" class="navbar-toggle">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Website header</a>
+			</div>
+			<div id="navbar-top" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">menu</a></li>
+					<li><a href="#">menu</a></li>
+					<li><a href="#">menu</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href=""><span class="fa fa-sign-in"></span></a></li>
+				</ul>				
+			</div>
+		</div>
+	</nav><!--.navbar-->
+	<div class="container-fluid" id="content">
+		<div class="row">
+			<div class="col-lg-2" id="left-sb">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a href="#">link1</a></li>
+					<li><a href="#">link2</a></li>
+					<li><a href="#">link3</a></li>
+					<li><a href="#">link4</a></li>
+					<li><a href="#">link5</a></li>
+				</ul>
+				<br>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<span class="fa fa-link"></span>
+						panel-heading
+					</div>
+					<div class="panel-body">
+						<ul>
+							<li><a href="">panel-body1</a></li>
+							<li><a href="">panel-body2</a></li>
+							<li><a href="">panel-body3</a></li>
+							<li><a href="">panel-body4</a></li>
+						</ul>
+					</div>
+					<div class="panel-footer">panel-footer</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<span class="fa fa-link"></span>
+						panel-heading
+					</div>
+					<div class="panel-body">
+						<ul>
+							<li><a href="">panel-body envira</a></li>
+							<li><a href="">panel-body envira</a></li>
+							<li><a href="">panel-body envira</a></li>
+						</ul>
+					</div>
+					<div class="panel-footer">panel-footer</div>
+				</div>
+			</div><!--#left-sb-->
+			<div class="col-lg-8" id="main-content">
+				<h1>Bootstrap totaurial By ABOLFAZL SABAGH</h1>
+				<p>
+					<span>Lorem ipsum dolor sit <abbr title="title">amet, consectetur</abbr> adipisicing elit. Aliquam, unde consequatur optio id, omnis minima error ut iste magnam odio inventore sint sequi vitae, deleniti cum modi quas illum animi!</span>
+					<span>Animi velit eos dignissimos ratione voluptatem repellat beatae eaque perferendis id? Molestias numquam <span class="mark">repudiandae</span> libero, quod. Deleniti, aliquid eius sit, voluptatum, sed totam, aut provident ab <span class="mark">officiis omnis voluptate</span> maiores.</span>
+					<span>Voluptatum vel dolor, eaque <code>unde</code> numquam minus, autem magnam, iusto vero deleniti ea! <b>Nesciunt</b>, sint quas et, quod facere neque sit laborum tenetur labore, provident, excepturi nostrum. Distinctio, alias, dolorum.</span>
+				</p>
+				<div class="row">
+					<ul class="col-sm-offset-1 col-sm-2">
+						<li>section1</li>
+						<li>section2</li>
+						<li>section3</li>
+						<li>section4</li>
+						<li>section5</li>
+					</ul>
+					<p class="col-sm-9"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui at, nesciunt excepturi cupiditate voluptas quisquam ullam animi ea! Expedita illum labore ut veniam, assumenda provident optio officia, rerum <kbd>exercitationem</kbd> laudantium.</span><span>Eveniet suscipit ipsum aliquam, dicta temporibus perferendis. Adipisci impedit, quae perferendis asperiores neque rerum reiciendis quis vitae repellendus sunt iure, saepe quos culpa veritatis quo. Incidunt ex eaque obcaecati. Tempore.</span></p>
+				</div>
+				<div class="panel-group" id="accordian">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title"><a href="#accor4" data-toggle="collapse" data-parent="#accordian">Teacher</a></div>
+						</div>
+						<div class="panel-collapse collapse" id="accor4">
+							<div class="panel-body">
+                                                            <img class="pull-right img-rounded img-responsive" src="../img/profile.jpg" alt="abolfazl-sabagh" width="200" height="200">
+								<table class="table">
+									<tr>
+										<td>Name :</td>
+										<td>Engineer Abolfazl Sabagh</td>
+									</tr>
+									<tr>
+										<td>Home address :</td>
+										<td>Iran Mashhad , shahrak gharb emamieh</td>
+									</tr>
+									<tr>
+										<td>Email address :</td>
+										<td>a.sabagh72@gmail.com</td>
+									</tr>
+									<tr>
+										<td>Nationality :</td>
+										<td>Iran</td>
+									</tr>
+									<tr>
+										<td>Telephone number :</td>
+										<td>(+98) 9361825145</td>
+									</tr>
+									<tr>
+										<td>Login name :</td>
+										<td>Henry Charier</td>
+									</tr>
+								</table>
+
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title"><a href="#accor5" data-toggle="collapse" data-parent="#accordian">Totaurial-section</a></div>
+						</div>
+						<div class="panel-collapse collapse" id="accor5">
+							<div class="panel-body">
+								<ul>
+									<li><a href="#">totaurial Bootstrap1</a></li>
+									<li><a href="#">totaurial Bootstrap2</a></li>
+									<li><a href="#">totaurial Bootstrap3</a></li>
+									<li><a href="#">totaurial Bootstrap4</a></li>
+									<li><a href="#">totaurial Bootstrap5</a></li>
+									<li><a href="#">totaurial Bootstrap6</a></li>
+									<li><a href="#">totaurial Bootstrap7</a></li>
+									<li><a href="#">totaurial Bootstrap8</a></li>
+									<li><a href="#">totaurial Bootstrap9</a></li>
+									<li><a href="#">totaurial Bootstrap10</a></li>
+									<li><a href="#">totaurial Bootstrap11</a></li>
+									<li><a href="#">totaurial Bootstrap12</a></li>
+									<li><a href="#">totaurial Bootstrap13</a></li>
+									<li><a href="#">totaurial Bootstrap14</a></li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title"><a href="#accor6" data-toggle="collapse" data-parent="#accordian">Time of course</a></div>
+						</div>
+						<div id="accor6" class="panel-collapse collapse">
+							<div class="panel-body">
+								<p><strong style="color:#337AB7">Start at : </strong>27 May 201627 May 2016</p>
+								<p><strong style="color:#337AB7">Ended at : </strong>13 May 201627 May 2017</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div><!--#main-content-->
+			<div class="col-lg-2" id="right-sb">
+				<div class="ads text-center">
+					ADS
+				</div>
+				<div class="ads text-center">
+					ADS
+				</div>
+				<div class="ads text-center">
+					ADS
+				</div>
+				<div class="ads text-center">
+					ADS
+				</div>
+			</div><!--#right-sb-->
+		</div>
+	</div><!--#content-->
+<div id="footer" class="text-center">Copyleft abolfazl sabagh</div>
+</body>
+</html>

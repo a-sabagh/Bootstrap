@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap-button-group</title>
+	<meta content="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<p>this is button type button that show you in div.btn-group</p>
+		<hr>
+		<div class="btn-group">
+			<button class="btn btn-primary">Apple</button>
+			<button class="btn btn-primary">Samsung</button>
+			<button class="btn btn-primary">Sony</button>
+		</div>
+		<h4>they are button group that ordred by size :</h4>
+		<br style="margin: 10px;">
+		<div class="btn-group btn-group-lg">
+
+			<button type="button" class="btn btn-primary">larg button</button>
+			<button type="button" class="btn btn-primary">larg button</button>
+			<button type="button" class="btn btn-primary">larg button</button>
+		</div>
+		<br style="margin:10px">
+		<div class="btn-group btn-group-md">
+
+			<button type="button" class="btn btn-primary">medium button</button>
+			<button type="button" class="btn btn-primary">medium button</button>
+			<button type="button" class="btn btn-primary">medium button</button>
+		</div>
+		<br style="margin:10px">
+		<div class="btn-group btn-group-sm">
+			<button class="btn btn-primary" type="button">small button</button>
+			<button class="btn btn-primary" type="button">small button</button>
+			<button class="btn btn-primary" type="button">small button</button>
+		</div>
+		<br style="margin:10px">
+		<div class="btn-group btn-group-xs">
+
+			<button type="button" class="btn btn-primary">extra small button</button>
+			<button type="button" class="btn btn-primary">extra small button</button>
+			<button type="button" class="btn btn-primary">extra small button</button>
+		</div>
+		<h4>button group vertical and justified</h4>
+		<div class="btn-group-vertical">
+			<button class="btn btn-warning" type="button">vertical button group</button>
+			<button class="btn btn-warning" type="button">vertical button group</button>
+			<button class="btn btn-warning" type="button">vertical button group</button>
+		</div>
+		<h6>this type of class is special for a element</h6>
+		<div class="btn-group btn-group-justified">
+			<a class="btn btn-warning">justified button</a>
+			<a class="btn btn-warning">justified button</a>
+			<a class="btn btn-warning">justified button</a>
+		</div>
+		<h6>for using from button you must wrap all button in div.btn-group</h6>
+		<div class="btn-group btn-group-justified">
+			<div class="btn-group">
+			   <button type="button" class="btn btn-primary">Apple</button>
+			</div>
+			<div class="btn-group">
+			   <button type="button" class="btn btn-primary">Samsung</button>
+			</div>
+			<div class="btn-group">
+			   <button type="button" class="btn btn-primary">Sony</button>
+			</div>
+		</div>
+		<h4>nesting buttton group and drop down menu</h4>
+		<div class="btn-group">
+			<button class="btn btn-primary" type="button">Apple</button>
+			<button class="btn btn-primary" type="button">Samsung</button>
+			<div class="btn-group">
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Sony <span class="caret"></span></button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#">Tablet</a></li>
+					<li><a href="#">Smartphone</a></li>
+				</ul>
+			</div>
+		</div>
+		<h6>new style for button group drop down menu</h6>
+		<div class="btn-group">
+			<button class="btn btn-primary">sony<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button></button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">Tablet</a></li>
+				<li><a href="#">Smartphone</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap-tooltip</title>
+	<meta content="carset=utf-8">
+	<meta name="viewport" content="initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle=tooltip]').tooltip();
+		});
+	</script>
+	<style>
+		.title{
+			color: orange;
+		}
+	</style>
+</head>
+<body style="">
+	<div class="container">
+		<span class="title">data-placement is auto : </span>&nbsp;<a href="" data-toggle="tooltip" title="tooltip here" data-placement="auto">hover tooltip</a><br><br><br>
+		<span class="title">data-placement is default :</span>&nbsp;<button data-toggle="tooltip" title="tooltip here" class="btn btn-default">hover tooltip</button>
+		<br><br><br><br><br>
+		<button class="btn btn-success" data-toggle="tooltip" title="tooltip is left" data-placement="left">tooltip button</button>&nbsp;
+		<button class="btn btn-success" data-toggle="tooltip" title="tooltip is top" data-placement="top">tooltip button</button>&nbsp;
+		<button class="btn btn-success" data-toggle="tooltip" title="tooltip is bottom" data-placement="bottom">tooltip button</button>&nbsp;
+		<button class="btn btn-success" data-toggle="tooltip" title="tooltip is right" data-placement="right">tooltip button</button>&nbsp;
+	</div><!--.container-->
+</body>
+</html>

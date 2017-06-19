@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap-popover</title>
+	<meta content="charset=utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="popover"]').popover();
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<button data-toggle="popover" title="popover-title" data-content="popover-content" class="btn btn-info" data-placement="right">popover button</button>
+		<!-- ################################################################## -->
+		<br><br><br><br>
+		<button data-toggle="popover" title="popover-title" data-content="popover-content" class="btn btn-success" data-placement="left">popover button</button>
+		<button data-toggle="popover" title="popover-title" data-content="popover-content" class="btn btn-success" data-placement="top">popover button</button>
+		<button data-toggle="popover" title="popover-title" data-content="popover-content" class="btn btn-success" data-placement="bottom">popover button</button>
+		<button data-toggle="popover" title="popover-title" data-content="popover-content" class="btn btn-success" data-placement="right">popover button</button>
+		<!-- ################################################################## -->
+		<h2>data-trigger attrebute : </h2>
+			<ul>
+				<li>focus</li>
+				<li>click</li>
+				<li>hover</li>
+			</ul>
+		<a href="#" data-toggle="popover" title="popover-title" data-trigger="focus" data-content="popover-content">click me</a>
+		<button data-placement="top" data-toggle="popover" title="popover-title" data-content="popover-content" class="btn btn-success" data-trigger="hover">popover button</button>
+		<button data-toggle="popover" title="popover-title" data-content="popover-content" class="btn btn-success">popover button</button>
+	</div><!--.container-->
+</body>
+</html>

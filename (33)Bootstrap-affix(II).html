@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap-affix(II)</title>
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<style>
+		.header{
+			background: url('img/header.jpg') no-repeat;
+			width: 100%;
+			height: 250px;
+			filter: blur(5px);
+		}
+		h1.slogan{
+			color: white;
+			position: absolute;
+			right: 40%;
+			top: 10%;
+			border: 5px solid white;
+			padding: 10px;
+			text-align: center;
+		}
+		@media (max-width: 950px) {
+			h1.slogan{
+				right: 15%;
+				left: 16%;
+			}
+		}
+		.affix{
+			width: 100%;
+			top: 0;
+			z-index: 999 !important;
+		}
+		nav.navbar{
+			margin-bottom: 0;
+		}
+
+		#section1{height: 500px; color: white; background-color:aqua;}
+		#section2{height: 500px; color: white; background-color:lightblue;}
+		#section3{height: 500px; color: white; background-color:gray;}
+		#section4{height: 500px; color: white; background-color:green;}
+	</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<div class="container-fluid header"></div>
+	<h1 class="slogan">Born To Be Alive</h1>
+	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="" class="navbar-brand">WebSite Name</a>
+			</div>
+			<div class="collapse navbar-collapse" id="mynavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#section1">section1</a></li>
+					<li><a href="#section2">section2</a></li>
+					<li><a href="#section3">section3</a></li>
+					<li><a href="#section4">section4</a></li>
+				</ul>
+			</div>
+		</div><!--.container-fluid-->
+	</nav>
+<div id="section1">
+	<div class="container">
+		<div class="row">
+			<h2>section1</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sint quas, suscipit neque reiciendis, minus harum ab nobis voluptatem, beatae iusto quia possimus fugit rerum culpa delectus quam incidunt soluta!</p>
+			</div>
+			<div class="col-md-3">
+				<p>At, voluptas adipisci reiciendis enim blanditiis alias assumenda doloribus eos! Officiis dolore et nobis ducimus ratione molestias qui labore esse, reiciendis sint ad facilis, assumenda nisi quia cum rem quaerat.</p>
+			</div>
+			<div class="col-md-3">
+				<p>Aliquam iusto, quod error magni accusantium adipisci consectetur, deleniti id perferendis illo distinctio, cumque, voluptatem quibusdam. Quasi odit, sapiente placeat pariatur laborum vel autem asperiores. Non impedit illum accusamus deserunt.</p>
+			</div>
+			<div class="col-md-3">
+				<p>Alias possimus autem, odit minus commodi, eveniet ut dolor! Quos, doloribus laudantium error impedit provident nisi, omnis neque itaque vitae, sit nostrum eum molestiae dolor fugiat voluptas. Suscipit molestias, repellendus.</p>
+			</div>
+		</div>
+		<div class="row">
+			<col-md-12>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nulla ab doloremque voluptate doloribus deleniti asperiores, repellat adipisci fugiat fugit ut mollitia molestiae quisquam accusamus numquam pariatur. Ducimus, quae, atque!</p>
+			</col-md-12>
+		</div>
+	</div>
+</div>
+<div id="section2">
+	<div class="container">
+		<div class="row">
+			<h2>section2</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus animi deserunt, quo ea, fugit ipsum, saepe quis quidem, illum in nihil distinctio quibusdam minus vitae neque aperiam ipsam impedit eligendi.</p>
+			</div>
+			<div class="col-md-3">
+				<p>Amet ullam corporis optio expedita provident sit commodi molestiae nemo officia incidunt quibusdam aspernatur eum atque illum nihil accusantium quod totam dignissimos iure, debitis, id rem suscipit. Sint, at, necessitatibus.</p>
+			</div>
+			<div class="col-md-3">
+				<p>Et quas a hic, iusto, labore quisquam est ipsam, nam eos tenetur architecto sunt earum maiores laboriosam libero iure soluta, nemo corrupti. Neque voluptatum, voluptates et voluptate natus unde similique.</p>
+			</div>
+			<div class="col-md-3">
+				<p>Fugit, magnam, mollitia? Voluptatem voluptatum mollitia repellat illo, hic et ullam aliquid eaque quia animi, voluptates ad assumenda aliquam velit! Modi sequi, repellat deserunt repudiandae, repellendus eos sit laudantium magnam.</p>
+			</div>
+		</div>
+		<div class="row">
+			<col-md-12>
+				<p>Ad earum commodi quia aliquid explicabo, ut quae provident unde odio inventore doloremque, sit atque, officiis, molestiae nulla quaerat tempore velit. Illo assumenda ex odio, architecto iure eos cupiditate quo.</p>
+			</col-md-12>
+		</div>
+	</div>
+</div>
+<div id="section3">
+	<div class="container">
+		<div class="row">
+			<h2>section3</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quibusdam quo minus corporis suscipit omnis modi, amet optio consequuntur distinctio vel, dolore tenetur exercitationem rem excepturi iste ratione, perspiciatis veritatis.</p>
+			</div>
+			<div class="col-md-3">
+				<p>Molestias quisquam magnam et, sequi, fugit voluptates inventore! Modi nobis saepe minima beatae nostrum, odit at quia adipisci velit, illo corrupti sunt! Quod aut voluptate ad dolores adipisci doloremque eaque!</p>
+			</div>
+			<div class="col-md-3">
+				<p>Magni fugit non nemo totam quisquam aliquid accusamus in blanditiis perferendis ipsam amet nulla, rerum similique est ab harum, libero debitis, doloribus ad minus! Qui eligendi natus facere, cum quia?</p>
+			</div>
+			<div class="col-md-3">
+				<p>Velit, corrupti, accusantium. Repellendus, nemo ab quia numquam rem nostrum doloremque sit quis consequatur tempora doloribus, laboriosam aspernatur corrupti molestias asperiores odit magni culpa reiciendis dicta nihil temporibus? Veniam, repellendus.</p>
+			</div>
+		</div>
+		<div class="row">
+			<col-md-12>
+				<p>Repellat quas perspiciatis labore ipsum, quam, magnam dolore sunt, laudantium iste, excepturi eius ea obcaecati itaque animi. Voluptate, veniam consequuntur error possimus quam vitae fuga natus optio, autem, neque porro.</p>
+			</col-md-12>
+		</div>
+	</div>
+</div>
+<div id="section4">
+	<div class="container">
+		<div class="row">
+			<h2>section4</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur enim dolor, molestiae accusamus odit dignissimos porro rerum, tenetur excepturi aliquid, ab doloremque sint qui explicabo, ipsum maiores hic. Libero, mollitia.</p>
+			</div>
+			<div class="col-md-3">
+				<p>Temporibus, quis non. Tenetur atque laboriosam et, nesciunt iste laborum debitis, dolorem quasi nihil? Ut ipsam aliquam quod, molestias reiciendis sint incidunt. Reiciendis dolorem, illum voluptate pariatur officia, numquam nisi.</p>
+			</div>
+			<div class="col-md-3">
+				<p>Unde minus ipsam tempore sed et ad ullam, harum rerum commodi perspiciatis est facilis fugiat mollitia officiis adipisci dolorum. Quia excepturi, repellat recusandae molestiae eius. Pariatur sed aperiam, praesentium alias.</p>
+			</div>
+			<div class="col-md-3">
+				<p>Maiores tenetur consequatur accusamus at molestias officiis cum natus, quas accusantium dolores, molestiae quo nulla voluptatibus quasi soluta ipsam voluptates adipisci doloribus iusto placeat saepe quibusdam. Placeat fugit voluptatum, quia.</p>
+			</div>
+		</div>
+		<div class="row">
+			<col-md-12>
+				<p>Cumque pariatur enim quas vel doloribus, unde, odit corrupti nulla, accusamus sequi nemo earum! Porro natus, ad voluptatem asperiores ea id ut dignissimos exercitationem, distinctio impedit adipisci aliquid unde. Hic?</p>
+			</col-md-12>
+		</div>
+	</div>
+</div>
+<footer style="width: 100%;height: 40px; background-color: #222222; color: white; text-align: center;line-height: 40px;">
+	Let Me Born , Born To Be Alive
+</footer>
+</body>
+</html>

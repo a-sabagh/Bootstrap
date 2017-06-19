@@ -1,0 +1,10 @@
+div,p,ul{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: tahoma;
+}
+img{
+    border: 0px;
+}

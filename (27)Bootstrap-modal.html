@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap-modal</title>
+	<meta content="carset=utf-8">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<style>
+		@media (max-width: 768px) {
+			.button{
+				text-align: center;
+			}
+		}
+	</style>
+</head>
+<body style="margin-top: 20px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-offset-6 col-lg-6 button">
+				<button data-toggle="modal" data-target="#modal1" class="btn btn-success">show modal</button>
+				<div id="modal1" class="modal fade">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">&times</button>
+								<div class="modal-title">modal-header area and modal title</div>
+							</div><!--HEADER-->
+
+							<div class="modal-body">
+								modal-body
+								<br>
+								add any html markup here for example h1.... , img , p , strong , b , ...
+								<button data-dismiss="modal" class="close">body-close</button>
+							</div><!--BODY-->
+
+							<div class="modal-footer">
+								<button class="btn btn-default" data-dismiss="modal">close</button>
+							</div><!--FOOTER-->
+
+						</div><!--.modal-content-->
+					</div><!--.modal-dialog-->
+				</div><!--#modal1-->
+				<br><br><br><br><br>
+
+				<!-- ######################################################################### modal small  -->
+				<button data-toggle="modal" data-target="#smallmodal" class="btn btn-info">small modal</button>
+				<div class="modal fade" id="smallmodal">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+							<div class="modal-header">
+								<a href="" data-dismiss="modal" class="close">&times</a>
+								<h3 class="modal-title">modal title</h3>
+							</div><!--.modal-header-->
+							<div class="modal-body">modal body for small modal</div>
+							<div class="modal-footer"><button data-dismiss="modal" class="btn btn-default">close</button></div>
+						</div><!--.modal-content-->
+					</div><!--.modal-dialog-->
+				</div><!--.smallmodal-->
+				<br><br><br><br><br>
+
+				<!-- ######################################################################### modal larg  -->
+				<button data-toggle="modal" data-target="#largmodal" class="btn btn-warning">larg modal</button>
+				<div class="modal fade" id="largmodal">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<a href="" data-dismiss="modal" class="close">&times</a>
+								<h1 class="modal-title">modal title</h1>
+							</div><!--.modal-header-->
+							<div class="modal-body">modal body</div>
+							<div class="modal-footer"><button data-dismiss="modal" class="btn btn-default">close</button></div>
+						</div><!--.modal-content-->
+					</div><!--.modal-dialog-->
+				</div><!--.modal-->
+			</div><!--.col-lg-6-->
+		</div><!--.row-->
+
+	</div><!--.container-->
+</body>
+</html>

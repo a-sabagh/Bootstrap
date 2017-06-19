@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>Bootstrap-grid(1)</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<style>
+		#content{
+			height: 1500px;
+		}
+		#sidebar{
+			height: 100%;
+			background: gray;
+		}
+		#main-content{
+			height: 100%;
+			background: HotPink;
+		}
+		footer{
+			height: 50px;
+			background: Cyan;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row content" id="content">
+			<div class="col-sm-3" id="sidebar"></div>
+			<div class="col-sm-9" id="main-content"></div>
+		</div>
+	</div>
+	<footer class="container-fluid">footer</footer>
+</body>
+</html>

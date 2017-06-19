@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" value="width=device-width initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        .animleft{
+            animation: fadeleft 2s;
+        }
+        @keyframes fadeleft{
+            from{
+                opacity: 0;
+                left: -50px;
+            }
+            to{
+                opacity: 1;
+                left: 0px;
+            }
+        }
+        .animright{
+            animation: faderight 2s;
+        }
+        @keyframes faderight{
+            from{
+                opacity: 0;
+                right: -50px;
+            }
+            to{
+                opacity: 1;
+                right: 0px;
+            }
+        }
+        .animtop{
+            position: relative;
+            animation: fadetop 2s;
+        }
+        @keyframes fadetop{
+            from{
+                opacity: 0;
+                top: -15px;
+            }
+            to{
+                opacity: 1;
+                top: 0px;
+            }
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background: #e6e61f;
+        }
+        .anim1{
+            animation: fade 1s;
+        }
+        .anim2{
+            animation: fade 2s;
+        }
+        .anim3{
+            animation: fade 3s;
+        }
+        .anim4{
+            animation: fade 4s;
+        }
+        @keyframes fade{
+            0%{
+                opacity: 0;
+            }
+            80%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+       <h2 class="text-center animtop">What We Do</h2>
+       <hr>
+        <div class="row">
+            <div class="col-md-6 animleft">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ea quos id, ullam earum quis, doloribus veritatis blanditiis, hic doloremque iure ab nemo aperiam optio magnam eius, ipsa placeat et.
+                </p>
+            </div>
+            <div class="col-md-6 animright">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quam corrupti voluptatem atque assumenda rerum labore sapiente officia debitis magni aliquid reprehenderit unde eum architecto ea ex veritatis obcaecati, numquam?
+                </p>
+            </div>
+        </div>
+        <h2 class="text-center animtop">What customers say</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-6 animleft">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ad tenetur possimus architecto nam praesentium id! Quidem, dolor, reprehenderit! Ullam accusantium deserunt hic quibusdam incidunt odio repudiandae minima, sed voluptate?
+                </p>
+            </div>
+            <div class="col-md-6 animright">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus cupiditate, ducimus sequi. Non eos nobis accusantium maxime ullam ut nesciunt saepe. Maxime eius, facere et, ad distinctio quis laboriosam quaerat?
+                </p>
+            </div>
+        </div>
+        <h2 class="text-center animtop">Our Proccess</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="circle anim1"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="circle anim2"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="circle anim3"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="circle anim4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

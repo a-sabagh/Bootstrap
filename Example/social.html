@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>social</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="../bootstrap/js/jquery.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<style>
+		.badge{
+			background: #AA3939;
+			color: white;
+		}
+		button[type="submit"]{
+			border: 1px solid #ccc;
+		}
+		.well{
+			margin-top: 20px;
+			text-align: center;
+		}
+		img{
+			margin: auto;
+		}
+		#left-sb,#right-sb{
+			background: #F5F5F5;
+		}
+		#location > div{
+			margin: auto;
+			border-radius: 5px;
+			border: 2px solid #ccc;
+		}
+		@media screen and (max-width: 380px) {
+			#location > div {
+				width: 250px !important;
+				height: 250px !important;
+			}
+		}
+		#footer{
+			padding: 8px;
+			background: #595f6f;
+			color: white;
+			border-top: 2px solid #ccc;
+		}
+		#footer h4{
+			letter-spacing: 2px;
+		}
+		#footer span.fa{
+			width: 40px;
+			height: 40px;
+			margin-right: 7px;
+			padding: 4px;
+			border: 2px solid #ccc;
+			border-radius: 21px;
+			color: white;
+		}
+		#footer a:hover span.fa{
+			color: #595f6f;
+			background: white;
+			transition: all 0.5s;
+		}
+		#city{
+			margin-top: 10px;
+			padding: 5px;
+		}
+		.ads{
+			padding: 10px;
+			border: 2px solid #ccc;
+			margin-bottom: 10px;
+			line-height: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" data-toggle="collapse" data-target="#navbar-top" class="navbar-toggle">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Website header</a>
+			</div>
+			<div id="navbar-top" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Massage</a></li>
+					<li><a href="#">New Video <span class="badge">3</span></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href=""><span class="fa fa-sign-in">&nbsp;</span>Loged Out</a></li>
+				</ul>
+				<form action="" class="navbar-form navbar-right">
+					<div class="input-group">
+						<input name="search" type="text" class="form-control" placeholder="search your word...">
+						<div class="input-group-btn">
+							<button type="submit" class="btn btn-defaul">
+								<span class="fa fa-search"></span>
+							</button>
+						</div>
+					</div>
+				</form>				
+			</div>
+		</div><!--.container-fluid-->
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div id="left-sb" class="col-md-4">
+				<div class="well">
+					<h4>My Profile</h4>
+					<img src="../img/profile.jpg" width="200" height="200" class="img-responsive img-circle" alt="">
+				</div>
+				<div class="well">
+					<h4>intresting</h4>
+					<span class="label label-success">Football</span>
+					<span class="label label-warning">Programming</span>
+					<span class="label label-success">Art</span>
+					<span class="label label-danger">sport</span>
+				</div>
+				<div class="well">
+					<h4>My location</h4>
+					<div id="location">
+						<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:300px;width:300px;'><div id='gmap_canvas' style='height:300px;width:300px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://termsofusegenerator.net">terms of use example</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(36.25885318751235,59.61353624918207),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(36.25885318751235,59.61353624918207)});infowindow = new google.maps.InfoWindow({content:'<strong>i\'m still hrere !!!</strong><br>iran mashhad<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+					</div>
+				</div>
+			</div><!--#right-sb-->
+			<div id="main-content" class="col-md-6">
+				<div class="row">
+					<div class="col-sm-offset1 col-sm-10 col-sm-offset-1">
+						<div class="panel panel-default text-center">
+							<div class="panel-heading">Like My Page in Social Network</div><div class="panel-body text-center">
+							<div class="panel-body">
+								<a href="" class="btn btn-info" style="background: #0065C9;">Like <span class="fa fa-facebook"></span></a>
+								<a href="" class="btn btn-warning">Follow <span class="fa fa-instagram"></span></a>
+								<a href="" class="btn btn-info">Follow <span class="fa fa-twitter"></span></a>
+								<a href="" class="btn btn-default">See <span class="fa fa-github"></span></a>
+							</div>
+						</div>
+					</div><!--.panel-->
+				</div>
+			</div><!--.row-->
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="well">
+						<h4>Richard Stallman</h4>
+						<img src="../img/profile1.jpg" alt="" width="100" height="100" class="img-circle">
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="well">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde fuga laudantium similique enim aperiam eum cumque. Voluptas facere repellat voluptatum quasi, voluptates accusantium expedita omnis vel doloremque non, illo nisi.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="well">
+						<h4>denis Ritchie</h4>
+						<img src="../img/profile2.jpg" alt="" width="100" height="100" class="img-circle">
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="well">
+						<p>Ratione esse soluta mollitia sequi saepe optio, reiciendis ducimus ab hic, unde a error laudantium? Esse quos ullam placeat minima, illum repellendus labore voluptatum illo, iusto necessitatibus laboriosam soluta! Hic?</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="well">
+						<h4>henry charier</h4>
+						<img src="../img/profile3.jpg" alt="" width="100" height="100" class="img-circle">
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="well">
+						<p>Ex libero accusamus voluptates a sapiente vel natus, placeat ratione amet voluptatum quaerat accusantium minima esse autem animi provident mollitia. Facere dicta, asperiores voluptates cupiditate, odio nemo ducimus fugiat corporis.</p>
+					</div>
+				</div>
+			</div>
+		</div><!--#main-content-->
+		<div id="right-sb" class="col-md-2">
+			<div id="city" class="thumbnail text-center">
+				<p>Mashhad City</p>
+				<img src="../img/mashhad.jpg" class="img-rounded" alt="mashhad">
+				<p class="caption">holy shrine in mashhad</p>
+			</div>
+			<div class="ads text-center">
+				<p>ADS</p>
+			</div>
+			<div class="ads text-center">
+				<p>ADS</p>
+			</div>
+		</div><!--#left-sb-->
+	</div><!--.row-->
+</div><!--.container-->
+<div id="footer" class="text-center">
+	<h4>Enjoy From my Free article and toturial</h4>
+	<hr style="height:3px;color:white;width:80%;">
+	<div class="row">
+
+		<div class="col-sm-6 text-center">all right reserve &copy; copy my content and link to me</div>
+		<div class="col-sm-6 text-center">
+			<a href="#"><span class="fa fa-2x fa-facebook"></span></a>
+			<a href="#"><span class="fa fa-2x fa-instagram"></span></a>
+			<a href="#"><span class="fa fa-2x fa-twitter"></span></a>
+			<a href="#"><span class="fa fa-2x fa-github"></span></a>
+		</div>
+
+	</div>
+</div>
+</body>
+</html>

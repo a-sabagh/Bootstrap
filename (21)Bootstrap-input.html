@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap-input</title>
+	<meta content="utf-8">
+	<meta name="viewport" content="width=devicewidth initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body style="padding-left: 10px;">
+	<h2>Bootstrap-input</h2>
+	<div class="container">
+		<h4 class="mark">Bootstrap input vertical checkbox (wrap <span style="color:orange">div.checkbox</span> for each item)</h4>
+		<div class="form-group">
+			<div class="checkbox">
+				<label for="checkbox1"><input type="checkbox" id="checkbox1">checkbox1</label>
+			</div>
+			<div class="checkbox">
+				<label for="checkbox2"><input type="checkbox" id="checkbox2">checkbox2</label>
+			</div>
+			<div class="checkbox disabled">
+				<label for="checkbox3"><input type="checkbox" id="checkbox3">checkbox3</label>
+			</div>
+		</div>
+		<h4 class="mark">Bootstrap input inline-checkbox (wrap <span style="color:orange">div.checkbox</span> for all item)</h4>
+		<div class="form-group">
+			<div class="checkbox">
+				<label for="checkbox4"><input type="checkbox" id="checkbox4">checkbox1</label>
+				<label for="checkbox5"><input type="checkbox" id="checkbox5">checkbox2</label>
+				<label for="checkbox6"><input type="checkbox" id="checkbox6">checkbox3</label>
+			</div>
+		</div>
+		<h4 class="mark">inline checkbox for each element <span style="color:orange">.checkbox-inline</span></h4>
+		<div class="form-group">
+			<label class="checkbox-inline" for="checkbox7"><input type="checkbox" id="checkbox7">checkbox</label>
+			<label class="checkbox-inline" for="checkbox8"><input type="checkbox" id="checkbox8">checkbox</label>
+			<label class="checkbox-inline" for="checkbox"><input type="checkbox" id="checkbox">checkbox</label>
+		</div>
+		<h4 class="mark">Bootstrap input inline-radio (wrap <span style="color:orange">div.radio</span> for all item)</h4>
+		<div class="form-group">
+			<div class="radio">
+				<label for="radio"><input type="radio" name="radio1" id="radio">radio</label>
+				<label for="radio1"><input type="radio" name="radio1" id="radio1">radio</label>
+				<label for="radio2"><input type="radio" name="radio1" id="radio2">radio</label>
+			</div>
+		</div>
+		<h4 class="mark">Bootstrap input vertical checkbox (wrap <span style="color:orange">div.radio</span> for all item)</h4>
+		<div class="form-group">
+			<div class="radio"><label for="radio3"><input type="radio" name="radio2" id="radio3">radio</label></div>
+			<div class="radio"><label for="radio3"><input type="radio" name="radio2" id="radio3">radio</label></div>
+			<div class="radio"><label for="radio3"><input type="radio" name="radio2" id="radio3">radio</label></div>
+		</div>
+		<h4 class="mark">inline radio for each element <span style="color:orange">.radio-inline</span></h4>
+		<div class="form-group">
+			<div class="radio-inline"><label for="radio4"><input type="radio" name="radio3" id="radio4">radio</label></div>
+			<div class="radio-inline"><label for="radio5"><input type="radio" name="radio3" id="radio5">radio</label></div>
+			<div class="radio-inline"><label for="radio6"><input type="radio" name="radio3" id="radio6">radio</label></div>
+		</div>
+		<h4>select option with .form-control for full width</h4>
+		<div class="form-group">
+			<label style="color: orange" for="select">simple select option for form control</label>
+			<select name="" id="select" class="form-control">
+				<option value="">option1</option>
+				<option value="">option2</option>
+				<option value="">option3</option>
+				<option value="">option4</option>
+			</select>
+		</div>
+	</div><!--.container-->
+<h2>hey guys i have new feature in html designed by bootstrap <span style="color:green">select box</span></h2>
+	<div class="container">
+		<h3>multiple select list (press shift or ctr to select one or <span class="mark">more than one item</span>)</h3>
+		<div class="form-group">
+			<label for="select1">multiple select form</label>
+			<select name="" id="" class="form-control" multiple="">
+				<option value="">option</option>
+				<option value="">option</option>
+				<option value="">option</option>
+				<option value="">option</option>
+			</select>
+		</div>
+	</div><!--.container-->
+</body>
+</html>
