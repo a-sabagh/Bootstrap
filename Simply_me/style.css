@@ -1,0 +1,261 @@
+/*---------------------------------------------------menu style
+*/
+body{
+	width: 100%;
+}
+a:hover , a:visited , a:active , a:focuse{
+	text-decoration: none;
+}
+.btn-collapse{
+	float: right;
+	padding: 0px 8px 2px;
+	color: #e5e5e5;
+	border-radius: 5px;
+	background: #191919;
+	margin: 4.4px 5px;
+	font-size: 25px;
+	transition: all .2s;
+	text-decoration: none;
+}
+.btn-collapse:hover{
+	color: #4c4c4c;
+	text-decoration: none;
+}
+@media screen and (min-width: 825px){
+	#main-menu li.has-child:hover:before{
+		opacity: 0;
+	}
+	#main-menu > li.has-child:before{
+		content: "";
+		border-right: 3px solid transparent;
+		border-left: 3px solid transparent;
+		border-top: 3px solid white;
+		position: absolute;
+		top: 14px;
+		left: -3px;
+	}
+	#main-menu li ul li.has-child:before{
+		content: "";
+		border-top: 4px solid transparent;
+		border-bottom: 4px solid transparent;
+		border-left: 4px solid white;
+		position: absolute;
+		top: 21px;
+		right: 5px;
+	}
+	.btn-collapse{
+		display: none;
+	}
+	nav{
+		background: #333333;
+		margin: 0px;
+		height: 45px;
+	}
+	#main-menu{
+		padding: 8px;
+	}
+	#main-menu >li{
+		line-height: 28px;
+		position: relative;
+		list-style: none;
+		margin-right: 8px;
+		float: left;
+		display: inline-block;
+	}
+	#main-menu li a{
+		font-size: 15px;
+		color: #e5e5e5;
+		padding: 7px;
+		text-decoration: none;
+		border-radius: 5px;
+		transition: all .2s;
+	}
+	#main-menu li a:hover{
+		background: #e5e5e5;
+		color: #333333;
+	}
+	#main-menu li ul{
+		width: 160px;
+		position: absolute;
+		left: 0px;
+		top: 45px;
+		background: #333333;
+		padding: 0px;
+		opacity: 0px;
+		visibility: hidden;
+		transition: all .2s;
+	}
+	#main-menu li:hover > ul{
+		opacity: 1;
+		visibility: visible;
+	}
+	#main-menu li ul li{
+		list-style: none;
+		position: relative;
+	}
+	#main-menu li ul li ul{
+		position: absolute;
+		top: 0px;
+		left: 170px;
+		visibility: hidden;
+		opacity: 0;
+		transition: all .2s;
+	}
+	#main-menu li ul li:hover ul{
+		visibility: visible;
+		opacity: 1;
+	}
+	#main-menu li ul li ul:before{
+		content: "";
+		border-top: 8px solid transparent;
+		border-bottom: 8px solid transparent;
+		border-right: 8px solid #333333;
+		position: absolute;
+		left: -16px;
+		top: 8px;
+
+	}
+	#main-menu li ul li > a{
+		display: block;
+		padding: 10px;
+		border-radius: 0px;
+	}
+	#main-menu li ul:before{
+		content: "";
+		width: 0px;
+		height: 0px;
+		border-right: 8px solid transparent;
+		border-left: 8px solid transparent;
+		border-bottom: 8px solid #333333;
+		position: absolute;
+		top: -8px;
+		left: 8px;
+	}
+}
+@media screen and (max-width: 825px){
+	li.has-child:before{
+		content: "";
+		border-right: 5px solid transparent;
+		border-left: 5px solid transparent;
+		border-top: 5px solid white;
+		position: relative;
+		top: 15px;
+		left: -5px;
+		float: left;
+	}
+	li.has-child:hover:before{
+		opacity: 0;
+	}
+	.btn-collapse{
+		display: block;
+	}
+	nav{
+		background: #333333;
+		overflow: hidden;
+	}
+	#main-menu{
+		padding: 8px;
+	}
+	#main-menu li{
+		width: 90%;
+		list-style: none;
+		float: none;
+	}
+	#main-menu li a{
+		display: block;
+		font-size: 15px;
+		color: #e5e5e5;
+		padding: 7px;
+		text-decoration: none;
+		border-radius: 5px;
+		transition: all .2s;
+	}
+	#main-menu li a:hover{
+		padding-left: 10px;
+		background: #e5e5e5;
+		color: #333333;
+	}
+	#main-menu li ul{
+		display: none;
+		visibility: hidden;
+		opacity: 0;
+	}
+	#main-menu li:hover > ul{
+		display: block;
+		visibility: visible;
+		opacity: 1;
+	}
+	#main-menu li ul{
+		display: none;
+		visibility: hidden;
+		opacity: 0;
+	}
+	#main-menu li ul li.has-child{
+		position: relative;
+	}
+	#main-menu ul li:hover ul{
+		display: block;
+		visibility: visible;
+		opacity: 1;
+	}
+	#main-menu{
+		display: none;
+		visibility: hidden;
+		opacity: 0;
+	}
+	ul#main-menu.active{
+		display: block;
+		visibility: visible;
+		opacity: 1;
+	}
+}
+/*---------------------------------------------------=.bg-1
+*/
+.container-fluid{
+	padding: 50px 0px;
+}
+.bg-1{
+	color: white;
+	background: #1ABC9C;
+}
+.bg-1 img{
+	margin: auto;
+	width: 250px;
+}
+.bg-1 img h2{
+	padding-bottom: 15px;
+}
+/*---------------------------------------------------=.bg-2
+*/
+
+.bg-2{
+	background: #474E5D;
+}
+.bg-2 h2{
+	color: white;
+	padding: 20px 0;
+}
+.panel-heading{
+	text-align: left;
+}
+.panel-body{
+	text-align: left;
+}
+/*---------------------------------------------------=.bg-3
+*/
+.portfolio-row img{
+	float: left;
+	width: 295.67px;
+	height: 280px;
+}
+.portfolio-row{
+	padding: 0px;
+}
+.portfolio-column{
+	padding: 50px 0px;
+}
+.bg-4{
+	background: #484E8D;
+	color: white;
+
+}
